@@ -14,10 +14,13 @@
       <h1>
         <a href="/">RUN BUDDY</a>
       </h1>
+
       <nav>
         <!-- Unordered list element-->
+
         <ul>
           <!-- list item element-->
+
           <li>
             <!-- Anchor element-->
             <a href="#what-we-do"> What We Do</a>
@@ -39,7 +42,57 @@
     </header>
 
     <!-- Hero/ jumbotron -->
-    <section></section>
+    <section>
+      <div>
+        <h3>Get Started Today</h3>
+
+        <p>
+          Fill out this form and one of our trainers will schedule a consult
+        </p>
+
+        <form>
+          <label for="Name"> Enter full name</label>
+
+          <input type="Text" placeholder="Your Name" name="Name" id="name" />
+
+          <label for="Email"> Enter in Email</label>
+
+          <input
+            type="email"
+            placeholder="Runner@gmail.com"
+            name="Email"
+            id="Email"
+          />
+
+          <label for="Phone"> Enter a telephone number</label>
+
+          <input type="tel" name="Phone" id="Phone" />
+
+          <p>
+            Have you worked out with a trainer before?
+            <input type="Radio" name="trainer-confirm" id="trainer-yes" />
+
+            <label for="trainer-yes">Yes</label>
+
+            <input type="radio" name="trainer-confirm" id="trainer-no" />
+
+            <label for="trainer-no">No</label>
+
+            <label for=""></label>
+          </p>
+
+          <p>
+            <label for="checkbox">
+              I acknowledge that I am at least 18 years of age
+            </label>
+
+            <input type="checkbox" name="age-confirm" id="checkbox" />
+          </p>
+
+          <button type="submit">Get running</button>
+        </form>
+      </div>
+    </section>
 
     <!-- "What We Do" Section-->
     <section>
@@ -64,6 +117,10 @@
     <!-- Footer-->
     <footer>
       <h2>❤️ Made With Love by Run Buddy</h2>
+      <div>
+        <a href="#">Read our Priviacy Policy</a><br />
+        &copy; 2019 Run Buddy, Inc
+      </div>
     </footer>
   </body>
 </html>
