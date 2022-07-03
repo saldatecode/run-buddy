@@ -135,7 +135,7 @@ footer a {
   }
 
   .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid #fce138;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
@@ -183,7 +183,7 @@ footer a {
 
   }
 
-  .section-title-primary-border{
+  .section-title primary-border{
 font-size: 40px;
   }
 
@@ -233,20 +233,20 @@ font-size: 40px;
 
 
 
-.section-title{
+.section-title {
 font-size: 55px;
 color: #024e76;
 margin-bottom: 35px;
 padding: 0 100px 20px 100px;
 display: inline-block;
-border-bottom: 3px #fce138;
+border-bottom: solid 3px #fce138;
 }
 
 .primary-border {
     border-color: #fce138;
 }
 
-.secondary{
+.secondary-border{
     border-color: #39a6b2;
 }
 
@@ -274,3 +274,43 @@ border-bottom: 3px #fce138;
     font-size: 38px;
 }
 
+.contact{
+    background-color: #024e76;
+    text-align: center;    
+}
+
+.contact h2{
+    color: #fce138;
+
+}
+
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+  }
+
+  .contact-info div{
+    width: 400px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 30px 0 0 60px;
+    color: white    
+  }
+  .contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+  }
+  
+  .contact-info a {
+    color: #fce138;
+  }
+  
+  /* REACH OUT STYLES END */
