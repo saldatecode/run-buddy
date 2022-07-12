@@ -18,6 +18,25 @@ body{
 
 /* apply styles to <header> */
 header{
+
+  background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  background-position: 80%;
+
+  position: -webkit-sticky;
+  
+  position: sticky;
+
+  top: 0;
+
+  text-shadow: 0 0 10px rgba(0,0,0, 0.5);
+
   flex-wrap: wrap;
 
   justify-content: space-between;
@@ -31,6 +50,8 @@ header{
 
 
 header h1{
+
+  text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 
   font-weight: bold;
 
@@ -70,9 +91,7 @@ list-style: none;
 }
 
 header nav ul li a {
-
-
-
+  text-shadow: 0 0 10px rgba(0,0,0, 0.5);
   
   padding: 10px 15px;
   
@@ -83,6 +102,8 @@ header nav ul li a {
 
 /* hero style start*/
 .hero{
+  background-attachment: fixed;
+  background-position: 80%;
   display: flex;  
   justify-content: center;
   flex-wrap: wrap;
@@ -139,12 +160,14 @@ footer a {
 }
 
 .hero-form{
+  box-shadow: 0 0 10px rgba(252, 225, 56,0.5);
   background-color: #fce138;
   padding: 20px;
   width: 40%;
   margin: 3.5%;
   color: #024e76;
   border: solid 3px#024e76;
+  border-radius: 10px;
   
 }
 
@@ -158,6 +181,7 @@ footer a {
 }
 
 .form-input {
+  
   border: 1px solid #fce138;
   display: block;
   padding: 7px 15px;
@@ -165,6 +189,7 @@ footer a {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .hero-form label{
@@ -172,11 +197,13 @@ footer a {
 }
 
 .hero-form button {
+  border-radius: 10px;
   color: #fce138;
   background-color: #024e76;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 }
 /* HERO STYLES END */
 
@@ -283,15 +310,15 @@ border-bottom: solid 3px #fce138;
   border-color: #39a6b2;
 }
 
-
+.step:last-child{
+    border-bottom: 1px solid #39a6b2;
+}
 .step{
 margin: 50px auto;
 
 padding-bottom: 50px;
 
 width: 80%;
-
-border-bottom: 1px solid #39a6b2;
 
 display: flex;
 
@@ -364,6 +391,8 @@ flex-wrap: wrap;
 }
 
 .contact-form input, .contact-form textarea{
+border-radius: 10px;
+
 border: 1px solid #024e76;
 
 display: block;
@@ -382,6 +411,7 @@ margin-top: 5px;
 }
 
 .contact-form button{
+border-radius: 10px;
 
 width: 100%;
 
@@ -444,17 +474,42 @@ margin: 15px;
   font-style: italic;
   font-size: 55px;
   color: #fce138;
-
+  text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
-  }
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+/* update existing rule with this declaration */
+.form-input {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+
 
 @media screen and (max-width: 980px) {
 header{
+  position: relative;
+
   padding-bottom: 0;
 
   justify-content: center;
