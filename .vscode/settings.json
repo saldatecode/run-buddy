@@ -1,0 +1,5 @@
+{
+  "git.suggestSmartCommit": false,
+  "git.smartCommitChanges": "tracked",
+  "output.smartScroll.enabled": true
+}
